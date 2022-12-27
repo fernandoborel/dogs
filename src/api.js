@@ -15,6 +15,19 @@ export function TOKEN_POST(body) {
   };
 }
 
+//validar token
+export function TOKEN_VALIDATE_POST(token) {
+  return {
+    url: API_URL + "/jwt-auth/v1/token/validate",
+    options: {
+      method: "POST",
+      headers: {
+        Authorization: "Bearer " + token,
+      },
+    },
+  };
+}
+
 //após o fetch com post, é gerado um token e essa função trata de pegar os dados
 export function USER_GET(token) {
   return {
