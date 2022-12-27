@@ -6,6 +6,8 @@ import Header from "./Components/Header";
 import Home from "./Components/Home";
 import Login from "./Components/Login/Login";
 
+// / = página inicial
+// /login/* = tudo que envolve login
 function App() {
   return (
     <div>

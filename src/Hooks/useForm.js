@@ -1,5 +1,6 @@
 import React from "react";
 
+//aqui realiza a verificação via regex
 const types = {
   email: {
     regex:
@@ -8,6 +9,7 @@ const types = {
   },
 };
 
+//função para verificar campos
 const useForm = (type) => {
   const [value, setValue] = React.useState("");
   const [error, setError] = React.useState(null);
