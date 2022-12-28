@@ -12,6 +12,10 @@ const types = {
     message:
       "A senha precisa ter 1 caracter maiúsculo, 1 minúsculo, 1 número. Com no mínimo 8 caracters.",
   },
+  number: {
+    regex: /^d\+$/,
+    message: "Digite apenas números",
+  },
 };
 
 //função para verificar campos
