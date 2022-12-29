@@ -80,6 +80,13 @@ export function PHOTOS_GET({ page, total, user }) {
   };
 }
 
+//exibe a img do usuário
+export function PHOTO_GET2(id) {
+  return {
+    url: `${API_URL}/api/photo/${id}`,
+  };
+}
+
 //exibe as imagens no modal
 export function PHOTO_GET(id) {
   return {
